@@ -438,25 +438,3 @@ if(require.main === module){
   const PORT = process.env.PORT || 3000
   app.listen(PORT, ()=>console.log('Server listening', PORT))
 }
-```
-
----
-
-## Deployment instructions (short)
-
-1. **Firebase (hosting + functions)**
-   - Install Firebase CLI: `npm i -g firebase-tools`
-   - `firebase login` -> `firebase init` (select Hosting + Functions + Firestore)
-   - Copy `functions/` and `frontend/` into project, set env vars with `firebase functions:config:set openai.key="..."`
-   - `firebase deploy` will publish both.
-
-2. **Alternative: Vercel (frontend) + Vercel Serverless (functions)**
-   - Create new Vercel project, push frontend to GitHub, connect.
-   - Deploy `functions/index.js` as Serverless Function (API route) and set environment variables (OPENAI_API_KEY).
-   - In frontend `.env`, set `REACT_APP_API_BASE` to your Vercel function base url.
-   - Vercel guide: https://vercel.com/docs
-
-3. **OpenAI key**: get it from https://platform.openai.com/
-
-# End of template
-# ecosphere-global
