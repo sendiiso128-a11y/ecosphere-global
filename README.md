@@ -458,21 +458,5 @@ if(require.main === module){
 
 3. **OpenAI key**: get it from https://platform.openai.com/
 
----
-
-## Security & Notes
-- Never expose your OpenAI or Google Translate API keys in client code. Always proxy via serverless
-- Set Firestore rules to restrict writes to authenticated users
-- For multilingual UX, prefer server-side translations for static content; use client-side translation for user-generated content via Translate API
-- Consider caching AI responses for repeated questions to reduce cost
-
----
-
-## Next steps I can help with
-- Generate ready-to-paste Google Sheets structure for no-code alternative
-- Provide exact Firebase rules and Cloud Function deploy commands
-- Customize UI to support accessibility and offline-first behavior
-
-
 # End of template
 # ecosphere-global
